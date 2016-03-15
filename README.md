@@ -36,8 +36,11 @@ cordova plugin add https://github.com/phonegap/phonegap-plugin-push
 ## Quick Example
 
 ```javascript
-    var push = PushNotification.init({ "android": {"senderID": "12345679"},
-         "ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
+    var push = PushNotification.init({
+    	"android": { "senderID": "12345679" },
+        "ios": { "alert": "true", "badge": "true", "sound": "true" },
+        "windows": {} 
+    });
 
     push.on('registration', function(data) {
         // data.registrationId
